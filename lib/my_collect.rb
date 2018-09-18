@@ -1,6 +1,6 @@
 def my_collect(array) 
   storage = []
-  change_and_store = ->(language) {storage << language.upcase}
+  change_and_store = lambda {|element| storage << element}
   i = 0 
   while i < array.length 
   yield change_and_store 
