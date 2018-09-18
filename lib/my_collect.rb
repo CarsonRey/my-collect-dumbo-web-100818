@@ -3,7 +3,7 @@ def my_collect(array)
   change_and_store = lambda {|language| storage << language.upcase}
   i = 0 
   while i < array.length 
-   storage << yield change_and_store
+   storage << yield 
   i += 1
 end
 storage
