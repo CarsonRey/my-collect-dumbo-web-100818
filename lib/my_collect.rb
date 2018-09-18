@@ -8,3 +8,5 @@ end
 storage
 end
 
+# create storage to return new collection 
+# usually iterating through a collection only needs the array and [i]
