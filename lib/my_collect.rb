@@ -3,7 +3,7 @@ def my_collect(array)
   change_and_store = lambda {|element| storage << element}
   i = 0 
   while i < array.length 
-  yield array[change_and_store]
+  yield change_and_store 
   i += 1
 end
 storage
