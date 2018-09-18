@@ -3,7 +3,7 @@ def my_collect(array)
   capitalize_and_store = ->(element) {storage << element.capitalize}
   i = 0 
   while i < array.length 
-  yield &capitalize_and_store 
+  yield capitalize_and_store 
   i += 1
 end
 storage
